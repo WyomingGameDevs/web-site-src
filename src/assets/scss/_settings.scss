@@ -72,8 +72,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: #3e404c,
+  secondary: #40b287,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -103,6 +103,9 @@ $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
+
+
+$background: url(/assets/img/GGJTile2.jpg);
 
 // 2. Breakpoints
 // --------------

@@ -1,18 +1,40 @@
 ---
 layout: index
-meta-title: Home
+title: Wyoming Game Devs
+meta-title: Home | Wyoming Game Devs
+jam1:
+	
 ---
 
-<section>
-	<header>
-		<h1>Wyoming Game Devs</h1>
-	</header>
+<section class="hero-section">
+	{{>page-hero}}
 </section>
-<section>
-	<a href="wyoming-game-jam/"><h2>Wyoming Game Jam</h2></a>
-	<h3>October 12th-14th, 2018</h3>
+
+<section class="dark-bg">
+	<div class="grid-container">
+		<div class="grid-x align-center">
+			<div class="cell small-4 text-center logo">
+				<img src="{{root}}assets/img/WGD_white.png" />
+			</div>
+			<div class="cell small-8">
+				<h3>Welcome</h3>
+				<p>Wyoming Game Devs is a community of Wyoming based game developers. We are hobbyists and professionals aiming to support one another, learn from each other, and encourage the growth of game development in our state. We host regular events around the state, and our members support game development education in a variety of ways.</p>
+			</div>
+		</div>
+	</div>
 </section>
-<section>
-	<a href="global-game-jam/"><h2>Global Game Jam</h2></a>
-	<h3>January 2019</h3>
+<section class="events">
+	<div class="grid-container">
+		<div class="grid-x align-center">
+			<div class="cell small-4 text-center logo">
+				<h2>Our Events</h2>
+			</div>
+		</div>
+	</div>
 </section>
+<div>
+{{#each jamblocks}}
+{{>jam-block this}}
+{{/each}}
+</div>
+{{>footer}}
