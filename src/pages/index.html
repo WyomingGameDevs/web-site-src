@@ -18,7 +18,24 @@ jam1:
 			</div>
 			<div class="cell small-8">
 				<h3>Welcome</h3>
+				<div>
 				<p>Wyoming Game Devs is a community of Wyoming based game developers. We are hobbyists and professionals aiming to support one another, learn from each other, and encourage the growth of game development in our state. We host regular events around the state, and our members support game development education in a variety of ways.</p>
+				</div>
+				<div class="grid-container">
+					<div class="grid-x align-center">
+						<div class="cell small-4">
+							<a href="https://discord.gg/uGUEVrk" class="button-alt join-us">
+								<div class="grid-container">
+									<div class="grid-x">
+										<div class="cell small-6"><i class="fab fa-discord"></i>
+										</div>
+										<div class="cell small-6"><h4>Join Us</h4></div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -27,14 +44,23 @@ jam1:
 	<div class="grid-container">
 		<div class="grid-x align-center">
 			<div class="cell small-4 text-center logo">
-				<h2>Our Events</h2>
+				<h2>Events</h2>
 			</div>
 		</div>
 	</div>
 </section>
-<div>
-{{#each jamblocks}}
-{{>jam-block this}}
-{{/each}}
-</div>
-{{>footer}}
+<section class="events-list">
+	<div class="grid-container">
+		<div class="grid-x align-center">
+			<div class="cell small-12 medium-6 group-background">
+				
+			</div>
+			<div class="cell small-12 medium-6">
+				{{#each jamblocks}}
+					{{>jam-block this}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</section>
+</section>

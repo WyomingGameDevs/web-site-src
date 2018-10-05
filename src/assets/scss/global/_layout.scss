@@ -1,13 +1,112 @@
 .dark-bg {
+	padding:2rem 0;
 	background-color: #3e404c;
 	color:#FFF;
 	h3 {
 		text-align:center;
-		border-bottom: 2px solid #40b287;
+		border-bottom: 2px solid $secondary-color;
 		font-weight: 700;
 		padding-bottom: 1rem;
 	}
+	h2 {
+		text-align:center;
+		border-bottom: 2px solid $primary-color;
+		margin-bottom: 2rem;
+		font-weight: 700;
+		font-size: 4.5rem;
+	}
+	h4 {
+		font-size: 4rem;
+	}
+	.button {
+		h4 {
+			font-size: 2rem;
+		}
+	}
 	.logo {
 		padding:1rem;
+	}
+	svg {
+		color: $secondary-color;
+		width: 4rem;
+		height:4rem;
+	}
+
+	.join-us {
+		margin-top:3rem;
+		h4 {
+			padding-top: .2rem;
+		}
+		svg {
+			color: $primary-color;
+			width: 60%;
+			height: 100%;
+		}
+	}
+}
+
+.light-bg {
+	padding: 2rem 0;
+	color:$primary-color;
+	background:$background;
+	text-align:center;
+	h2 {
+		text-align:center;
+		border-bottom: 2px solid $primary-color;
+		margin-bottom: 2rem;
+		font-weight: 700;
+		font-size: 4.5rem;
+	}
+	p {
+		display:block;
+		margin-bottom:2rem;
+	}
+
+	.schedule {
+		h3{
+			text-transform:uppercase;
+		}
+		table{
+			margin-left:0;
+			background:none;
+			font-size:.8rem;
+			tbody {
+				text-align:left;
+				color:$white;
+				background-color:$secondary-color;
+				border:none;
+				tr:nth-child(2n) {
+					background-color:$primary-color;
+				}
+				td {
+					padding:.6rem 0rem .5rem .5rem;
+				}
+			}
+		}
+		strong {
+			font-size:.8rem;
+		}
+	}
+}
+
+.accordion {
+	background-color: $primary-color;
+	list-style-type:none;
+	.accordion-title {
+		color: $secondary-color;
+		font-weight: 700;
+		border: 1px solid $secondary-color;
+		&:hover {
+			background: $secondary-color;
+			color: $primary-color;
+		}
+	}
+}
+
+.organizers {
+	img {
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
 	}
 }

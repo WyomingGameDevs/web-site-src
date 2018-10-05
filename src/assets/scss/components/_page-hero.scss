@@ -27,3 +27,17 @@
 		}
 	}
 }
+
+.hero-section-jam {
+	@extend .hero-section;
+	padding-bottom:4rem;
+	header {
+		padding-bottom:2rem;
+	}
+	h4 {
+		font-size:5rem;
+	}
+	.button {
+		min-width:10rem;
+	}
+}

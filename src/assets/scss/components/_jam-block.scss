@@ -1,6 +1,8 @@
 .jam-block {
+	padding:2rem 0;
 	font-family: 'Roboto',sans-serif;
-	background: $background;
+	border-bottom: 5px $secondary-color solid;
+	background:$background;
 	.grid-container {
 		padding: 2rem 0;
 		.grid-x {
@@ -22,7 +24,7 @@
 			}
 		}
 	}
-	&:nth-child(even) {
+	&:nth-child(odd) {
 		background:url(none);
 		background-color:$primary-color;
 		color:$white;
@@ -37,7 +39,7 @@
 					}
 					h3 {
 						color:$secondary-color;
-						text-shadow: 2px 2px $white;
+						text-shadow: 2px 2px #272727;
 						margin-bottom:1rem;
 					}
 				}
