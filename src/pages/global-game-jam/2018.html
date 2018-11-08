@@ -1,29 +1,60 @@
 ---
 layout: index
+title: Global Game Jam 2018
 meta-title: Global Game Jam 2018
 ---
 
-<h2>{{meta-title}}</h2>
-<div class="grid-container">
-	<div class="grid-x align-center">
-		<div class="cell small-12 large-6">
-			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-				<div class="orbit-wrapper">
-					<div class="orbit-controls">
-						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-					</div>
-					<ul class="orbit-container">
-						{{#each ggj2018slides}}
-						<li class="is-active orbit-slide">
-							<figure class="orbit-figure">
-							<img class="orbit-image" src="../assets/img/ggj/2018/{{this}}" alt="Global Game Jam 2018 Photo">
-							</figure>
-						</li>
-						{{/each}}
-					</ul>
+<section class="hero-section-jam">
+    {{>page-hero-jam-complete location="Casper, WY" date="January 26, 2018"}}
+</section>
+<section class="dark-bg">
+	<div class="grid-container">
+		<div class="grid-x align-center">
+			<div class="cell small-4 text-center logo">
+				<img src="{{root}}assets/img/GGJ00-RoundLogo-900x900.png" />
+			</div>
+			<div class="cell small-8">
+				<h3>What is a Game Jam?<br>Build a game in 48 hours!</h3>
+				<div>
+				<p>Global Game Jam is a <strong>FREE</strong> 48-hour event were people come together to make games. Participants work in teams to write code, create art, compose music, construct sound effects, and design gameplay. The goal is not only to emerge with something “finished” and playable, but to also learn from one other and practice the art of game design.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
+<section class="light-bg games">
+		<div class="grid-x grid-padding-x align-center">
+			<div class="small-10 medium-8 cell">
+				<h2><i class="fas fa-gamepad"></i> Games Created</h2>
+				<h3 class="theme">Theme: Transmission</h3>
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x align-center text-center">
+			<div class="small-12 large-4 push-2 cell">
+				<h3>Planet Deth</h3>
+				<iframe src="https://itch.io/embed/219210?dark=true" width="552" height="167" frameborder="0"></iframe><br>
+				<a href="https://globalgamejam.org/2018/games/planet-deth" target="_blank"><strong>Visit Official Entry Page</strong></a>
+			</div>
+			<div class="small-12 large-4 cell">
+				<h3>Window Pain</h3>
+				<iframe src="https://itch.io/embed/218419?dark=true" height="167" width="552" frameborder="0"></iframe><br>
+				<a href="https://globalgamejam.org/2018/games/window-pain" target="_blank"><strong>Visit Official Entry Page</strong></a>
+			</div>
+		</div>
+</section>
+<section class="dark-bg" id="photos">
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x align-center">
+			<div class="small-10 medium-8 cell">
+				<h2><i class="fas fa-camera"></i> Photos</h2>
+			</div>
+		</div>
+		<div class="row small-up-2 medium-up-3 large-up-4">
+				{{#each ggj2018slides}}
+				<div class="column column-block grid-photo" style="background-image:url(../assets/img/ggj/2018/{{this}});}">
+					<a href="../assets/img/ggj/2018/{{this}}" title="Global Game Jam 2018 Photo" target="_blank">{{this}}</a>
+				</div>
+				{{/each}}
+		</div>
+	</div>
+</section>

@@ -43,6 +43,16 @@
 			height: 100%;
 		}
 	}
+
+	.past-events {
+		a {
+			font-size: 4rem;
+			color:$secondary-color;
+			:hover{
+				color:$white;
+			}
+		}
+	}
 }
 
 .light-bg {
@@ -87,7 +97,28 @@
 			font-size:.8rem;
 		}
 	}
+
+	.past-events {
+		a {
+			font-size: 4rem;
+			color:$primary-color;
+		}
+	}
 }
+
+.white-bg {
+	padding: 2rem 0;
+	color:$primary-color;
+	text-align:center;
+	h2 {
+		text-align:center;
+		border-bottom: 2px solid $primary-color;
+		margin-bottom: 2rem;
+		font-weight: 700;
+		font-size: 4.5rem;
+	}
+}
+
 
 .accordion {
 	background-color: $primary-color;
@@ -108,5 +139,13 @@
 		width: 200px;
 		height: 200px;
 		border-radius: 100px;
+	}
+}
+
+.games {
+	.theme {
+		margin:1rem 0;
+		color:$secondary-color;
+		font-weight:bold;
 	}
 }

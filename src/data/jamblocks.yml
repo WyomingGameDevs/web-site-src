@@ -1,8 +1,8 @@
-- name: Wyoming Game Jam
-  date: October 12th-14th, 2018
-  location: Laramie, WY
-  page: wyoming-game-jam
 - name: Global Game Jam
-  date: January 2019
+  date: January 25-27, 2019
   location: Casper,WY
   page: global-game-jam
+- name: Wyoming Game Jam
+  date: 2019
+  location: Laramie, WY
+  page: wyoming-game-jam
