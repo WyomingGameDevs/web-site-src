@@ -5,11 +5,16 @@
 		.grid-x {
 			.cell {
 				h2 {
-					font-size: 5rem;
+					font-size: 4rem;
 					font-family:'Monoton',cursive;
 					color:$secondary-color;
 					font-weight: 700;
 					line-height:1.4;
+
+					@include breakpoint(large)
+					{
+						font-size:5rem;
+					}
 				}
 			}
 		}

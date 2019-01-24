@@ -4,13 +4,13 @@
 		.cell {
 
 			h1 {
-				font-size: 4.5rem;
+				font-size: 3.5rem;
 				font-family:'Monoton',cursive;
 				color:$primary-color;
 				font-weight: 700;
 				line-height:1.4;
 				span {
-					font-size:4rem;
+					font-size:2rem;
 					color:$white;
 					text-shadow: 2px 2px #3e404c;
 					font-family: 'Roboto',sans-serif;
@@ -18,6 +18,9 @@
 				@include breakpoint(large)
 				{
 					font-size: 6.5rem;
+					span {
+						font-size:4rem;
+					}
 				}
 			}
 
